@@ -1,3 +1,12 @@
+// Habilitando o modo estrito
+  `use strict`;
+
+
+  teste = "Senac"
+console.log(teste);
+
+
+
 
 /* Exercícios */
 
@@ -11,11 +20,14 @@ let UC = 2
 
 // 3) Monte e mostre uma frase no console exibindo a UC e a competência. Exemplo: Estamos na UC2 estudando Front-End com JavaScript.
 
-console.log("Estudando a UC" + UC, "e aplicando" + competencia);
+console.log(`Estamos na UC${UC} estamos estudando ${competencia}.`);
 
 
 
 
+
+
+z
 
 
 
