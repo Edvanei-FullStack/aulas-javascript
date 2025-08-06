@@ -32,5 +32,44 @@ Na prática, um array é uma lista de dados sequenciais, e cada dado é armazena
 
 **Obs.:** a contagem dos índices **sempre inicia em ZERO**
 
+## A concatenação
+
+ Em JavaScript é o processo de unir duas ou mais strings (ou outros valores) em uma única string. Existem várias formas de fazer isso:
+
+ ## Usando o Operador +
+ 
+let nome = "Edvanei";
+let sobrenome = "Cruz";
+let nomeCompleto = nome + " " + sobrenome;
+console.log(nomeCompleto); // "Edvanei Cruz"
+
+## Usando o operador +=
+
+let saudacao = "Olá, ";
+saudacao += "Edvanei!";
+console.log(saudacao); // "Olá, Edvanei!"
+
+## Usando template literals (crase `)
+
+let nome = "Edvanei";
+let idade = 25;
+let mensagem = `Meu nome é ${nome} e tenho ${idade} anos.`;
+console.log(mensagem);
+
+## Usando o método .concat()
+
+let parte1 = "Bom ";
+let parte2 = "dia!";
+let frase = parte1.concat(parte2);
+console.log(frase); // "Bom dia!"
+
+
+
+
+
+
+
+
+
 
 
