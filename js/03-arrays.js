@@ -34,7 +34,7 @@ console.log(concatenacao);
 
 
 
-
+// Para utilizar o template string é preciso usar ``
 
 let Duas_plataformas = `Minha plataforma preferida é ${ plataformas[4]}, mas tambem cursto o classico ${plataformas[1]}`
 
