@@ -29,16 +29,49 @@ let plataformas = ["Atari", "Mega Drive", "Super NES", "NeoGeo", "Playstation","
 console.log(plataformas[4]);
 console.log(plataformas[1]);
 
-let concatenacao = (plataformas[4] + plataformas[1])
+let concatenacao = plataformas[4] + plataformas[1];
 console.log(concatenacao);
 
 
 
 // Para utilizar o template string é preciso usar ``
 
-let Duas_plataformas = `Minha plataforma preferida é ${ plataformas[4]}, mas tambem cursto o classico ${plataformas[1]}`
+let Duas_plataformas = `Minha plataforma preferida é ${ plataformas[4]}, mas tambem curto o classico ${plataformas[1]}`
 
 console.log(Duas_plataformas);
+
+
+/*Array como MATRIZ DE 2 DIMENSÕES */
+
+const tecnologias = [
+
+    ["HTML", "CSS", "JAVASCRIPT"],
+
+    ["Figma", "Photoshop"],
+
+    ["PHP", "Node.js", "SQL", "Express"]
+
+    ];
+
+    console.log(tecnologias); //Array console log tecnologias
+
+    console.log(tecnologias [0] [2] ); // ressultado JavaScript
+
+    console.log(tecnologias [1] [0] );// Resultado deve ser Figma
+
+    console.log(tecnologias [2] [3] ); //Resultado deve ser Express
+
+    
+    
+
+
+    
+
+
+    
+    
+
+
 
 
 
