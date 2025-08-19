@@ -41,21 +41,21 @@ else{
 1. Crie duas variáveis conforme a seguir:
  
 - Nota 1 (contendo um valor de 0 a 10)
-- Nota 2 (contendo outro valor de 0 a 10)*/
+- Nota 2 (contendo outro valor de 0 a 10)
 
-let nota1 = 3;
 
-let nota2 = 3;
  
 /* 2. Crie uma variável chamada "Média" que receberá o valor CALCULADO da média das duas notas informadas. 
-DICA: você deve SOMAR as duas notas e DEPOIS dividir por 2.*/
+DICA: você deve SOMAR as duas notas e DEPOIS dividir por 2.
 
 let media = ( nota1 + nota2 ) /2;
 console.log(media);
 
  
 3. /*Programe uma condicional que verifique o valor da média calculada. Se a média for maior/igual a 7, mostre "aprovado". 
-Caso contrário, mostre "reprovado".*/
+Caso contrário, mostre "reprovado".
+
+
 
 if(media >= 7){
     console.log("Aprovado!");    
@@ -64,15 +64,60 @@ if(media >= 7){
 
 else{ console.log("Reprovado!");
 
-}
+} */
 
-/*Atalho ifelse*/
+/*Atalho ifelse
 
 if (condition) {
     
-} else {
+} else { } */ 
+
+
+//Condicional Encadeada/Sucessiva
+
+/* Verificandoo desempenho do aluno conforme a média:
+
+- Média acima de 9? ótimo
+- Média acima de 7? Bom
+- Média acima de 5? Ruim
+- Média até 5? Péssimo */
+
+
+
+
+
+
+let nota1 = 10;
+
+let nota2 = 10;
+
+let media = (nota1 + nota2) /2;
+
+
+
+if(media > 9){
+    console.log("Ótimo!");        
+}
+
+else if( media > 7){
+    console.log("Bom!");
     
 }
+
+else if( media > 5){
+    console.log("Ruim!!!");
+    
+}
+
+else(media => 5 ) {
+    console.log("Pessimo!");
+
+}
+    
+
+    
+
+
 
 
 
