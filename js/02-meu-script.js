@@ -27,7 +27,6 @@ console.log(`Estamos na UC${UC} estamos estudando ${competencia}.`);
 
 
 
-z
 
 
 
