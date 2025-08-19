@@ -66,6 +66,14 @@ else{ console.log("Reprovado!");
 
 }
 
+/*Atalho ifelse*/
+
+if (condition) {
+    
+} else {
+    
+}
+
 
 
 
