@@ -48,6 +48,8 @@ console.log("\nExemplo ||")
 let feriado = false;
 let fimDeSemana = false;
 
+//mesmo forma simplificada if(feriado || fimDeSemana)
+
 if(feriado === true || fimDeSemana === true){
     console.log("Não tem Aula!");    
 }
@@ -56,6 +58,21 @@ else{
     console.log("Tem Aula!");
     
 }
+
+
+console.log("\nExemplo !");
+// ! -> Inverte a lógica. O que é TRUE, vira FALSE. O que é FALSE, vira TRUE.
+
+//Supomdo que a BlackFriday não esta ativa, ou seja nao esta em vigor
+
+blackfriday = false;
+
+if(!blackfriday){}
+
+// ! esclamação operador lógico de inversão.
+
+
+
 
 
 
