@@ -13,6 +13,10 @@ console.log("Exemplo &&");
 let idade = 30;
 let temCarta = true;
 
+/*if (idade >= 18 && temCarta === true) Comparação IMplicita*/
+
+/*if (idade >= 18 && temCarta) Comparação /
+
 
 if (idade >= 18 && temCarta === true){
     console.log("Pode dirigir");    
@@ -36,6 +40,24 @@ let b = "10";
 let resultadoComparacao = a === b;
 //let resultadoComparacao = a === b; // False
 console.log(resultadoComparacao);
+
+
+console.log("\nExemplo ||")
+// || -> retorna VERDADEIRO se pelo menos uma das condições for VERDADEIRA
+
+let feriado = false;
+let fimDeSemana = false;
+
+if(feriado === true || fimDeSemana === true){
+    console.log("Não tem Aula!");    
+}
+
+else{
+    console.log("Tem Aula!");
+    
+}
+
+
 
 
 
