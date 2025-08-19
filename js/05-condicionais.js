@@ -25,15 +25,15 @@ let idade = 19;
 /* Lógica: verificar se o aluno é maior ou menor de idade*/
 
 
-//Condicional Composta (if/else)
+/*Condicional Composta (if/else) 
 if(idade < 18){
     console.log("Você é menor de idade!");    
 }
 
 else{
     console.log("Você é maior de idade, Parabens!");    
-}
-
+} //
+       
 /*Geral
 
  Exercício Condicional
@@ -87,7 +87,7 @@ if (condition) {
 
 
 
-let nota1 = 10;
+let nota1 = 5;
 
 let nota2 = 10;
 
@@ -109,10 +109,21 @@ else if( media > 5){
     
 }
 
-else(media => 5 ) {
-    console.log("Pessimo!");
+else{console.log("Pessimo!")};
 
-}
+
+
+
+
+console.log("\nExemplo 4");
+
+/*Condicional composta com operador TERNÁRIO   ?:    */
+let status = idade >= 18 ? "maior" : "menor";
+console.log(situação);
+
+
+
+
     
 
     
