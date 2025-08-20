@@ -8,3 +8,48 @@ comandos mais tradicionais: while (ENQUANTO) e for (PARA)
 
 Normalmente, os laços são controlados através de uma variavel contadora. */
 
+console.log("Exemplo 1: WHILE (enquanto)");
+
+
+//Abaixo foi adicionado uma variavel let contador...
+// while -> enquanto a varial for menor 5 o loop retorna com o valor.
+
+let contador = 1;
+while(contador <= 5) {
+    console.log("Valor do contador: "+contador);
+
+//incremento vai adicionando 1 numero inteiro a cada loop.    
+contador++; 
+
+}
+
+/*Normalmente, os loops são controlados através de uma variavel contadora. Esta variavél é comunente chamda de "i", "j","k" ou qualquer outra letra se necessario.*/
+
+console.log("Exemplo 1:WHILE (enquanto)");
+
+let i = 1;
+while(i <=5){
+    console.log("Valor de i: "+i);
+    i++ //incremento
+    //i = i + 1
+    
+}
+
+console.log("\nExemplo 2: FOR (para)");
+
+/* for( inicialização da variavel; comdiçao; atualização) */
+for( let j = 1; j <= 10; j++ ){
+    console.log("J vale"+j);
+    
+
+}
+
+
+
+
+
+
+
+
+
+
