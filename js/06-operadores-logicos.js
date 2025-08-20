@@ -67,9 +67,18 @@ console.log("\nExemplo !");
 
 blackfriday = false;
 
-if(!blackfriday){}
+/*Aqui, a usar! (NEGAÇÃO), verificamos se a variável NÃO È TRUE. Ou seja, INVERTEMOS a lógica */
 
-// ! esclamação operador lógico de inversão.
+if(!blackfriday){
+    console.log("Preços Normais...");
+    
+}
+else{
+    console.log("Preços Normais......");
+    
+}
+
+// ! Esclamação operador lógico de inversão.
 
 
 
