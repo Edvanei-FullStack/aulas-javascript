@@ -37,7 +37,7 @@ while(i <=5){
 
 console.log("\nExemplo 2: FOR (para)");
 
-/* for( inicialização da variavel; comdiçao; atualização) */
+/* for( inicialização da variavel; condiçao; atualização) */
 for( let j = 1; j <= 10; j++ ){
     console.log("J vale"+j);
     
@@ -49,6 +49,15 @@ for( let j = 1; j <= 10; j++ ){
 console.log("\nExemplo 3: loop regressivo ");
 for(let k = 10; k >= 1; k--){
     console.log("K vale "+k);
+    
+}
+
+console.log("\nExemplo 4: loop e array");
+
+const bandas = ["Slayer", "Metallica", "Iron", "Nightwish", "Judas Priest"];
+
+for( let i = 0; i < bandas.length; i++ ){
+    console.log( bandas[i] );
     
 }
 
