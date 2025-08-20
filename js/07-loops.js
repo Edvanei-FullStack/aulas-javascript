@@ -125,9 +125,11 @@ let clientes = [
 ];
 
 for(i = 0; i < clientes.length; i++){
-    console.log(clientes[i])
+    console.log(`Cliente:${clientes[i].nome} id:${clientes[i].id}`);
+    
+    
 
-};   
+}
 
 
 
