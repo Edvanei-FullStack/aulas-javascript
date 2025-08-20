@@ -123,10 +123,11 @@ let clientes = [
     }
 
 ];
-for (let cliente of clientes) {
-    console.log("Cliente:", cliente.nome + ", id:", +cliente.id);
 
-}
+for(i = 0; i < clientes.length; i++){
+    console.log(clientes[i])
+
+};   
 
 
 
