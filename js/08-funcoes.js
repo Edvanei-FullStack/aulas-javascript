@@ -75,7 +75,49 @@ let resultado2 = multiplicar(200, 10);
 //Exibimos o resultado
 
 console.log("Resultado 1: " +resultado1);
-console.log("Resultado 2: " +resultado2);
+console.log("Resultado 2: " +resultado2); // preciso apreender o template string
+
+console.log("\nExemplo 6: Simplificando com Arrow Function");
+
+/* Versão 1: Sintaxe declarada/nomeada
+
+function somar(valor1, valor2){
+    return valor1 + valor2
+}; */
+
+//Versão 2: Sintaxe Arrow Function com retorno implicido
+const somar = (valor1, valor2) => valor1 + valor2;
+
+
+console.log(somar (150, 500));
+
+console.log("\nExemplo 7: formatando valor monetário");
+
+let preco = 5000;
+let desconto = preco * 0.10; // 10%
+let precoFinal = preco - desconto;
+
+console.log("Preço original:"+preco);
+console.log("Desconto:"+desconto);
+console.log("Preço Final:"+precoFinal);
+
+//Exemplo: usando recursos da classe Intl (Internacionalização)
+const exemplo = new Intl.NumberFormat("pr-br", {
+    style: "currency",
+    currency: "BRL"
+
+}).format(preco);
+
+console.log(exemplo);
+
+
+
+
+
+
+
+
+
 
 
 
