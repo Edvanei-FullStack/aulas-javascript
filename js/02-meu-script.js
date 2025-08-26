@@ -20,7 +20,10 @@ let UC = 2
 
 // 3) Monte e mostre uma frase no console exibindo a UC e a competência. Exemplo: Estamos na UC2 estudando Front-End com JavaScript.
 
-console.log(`Estamos na UC${UC} estamos estudando ${competencia}.`);
+console.log(`Estamos na UC${UC}, estudando Front-End com ${competencia}`);
+
+
+
 
 
 

@@ -49,7 +49,7 @@ let saudacao = "Olá, ";
 saudacao += "Edvanei!";
 console.log(saudacao); // "Olá, Edvanei!"
 
-## Usando template literals (crase `)
+## Usando template  (crase `)
 
 let nome = "Edvanei";
 let idade = 25;

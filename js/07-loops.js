@@ -105,7 +105,7 @@ Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e
 - Cliente: Ian, id: 3  */
 
 
-let clientes = [
+let cliente = [
 
     {
         nome: "Dio",
@@ -123,13 +123,6 @@ let clientes = [
     }
 
 ];
-
-for(i = 0; i < clientes.length; i++){
-    console.log(`Cliente:${clientes[i].nome} id:${clientes[i].id}`);
-    
-    
-
-}
 
 
 

@@ -26,8 +26,8 @@ let plataformas = ["Atari", "Mega Drive", "Super NES", "NeoGeo", "Playstation","
 
 // 2) Em seguida, mostre no console uma frase personalizada indicando o segundo, o quinto e o sétimo elemento do array. Use concatenação e/ou template string.
 
-console.log(plataformas[4]);
 console.log(plataformas[1]);
+console.log(plataformas[6]);
 
 let concatenacao = plataformas[4] + plataformas[1];
 console.log(concatenacao);
