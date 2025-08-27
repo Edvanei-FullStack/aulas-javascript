@@ -75,6 +75,53 @@ declarados dentro do objeto.
 Normalmente, o objeto é programado de acordo com algum contexto relacionado ao mundo real.
 
 
+## DOM
+
+A manipulação do DOM (Document Object Model) é o processo de modificar a estrutura, conteúdo e estilo de uma página web através de uma linguagem de script, como o JavaScript. Isso permite a criação de interfaces de usuário dinâmicas, onde elementos podem ser adicionados, removidos ou alterados em tempo real, sem a necessidade de recarregar a página. Para realizar essas operações, os desenvolvedores utilizam métodos para selecionar elementos (como getElementById ou querySelector), para criar e remover elementos (como createElement e remove), e para modificar atributos e estilos. 
+
+Como funciona a manipulação do DOM
+
+1. Representação em árvore:
+O DOM representa o documento HTML como uma árvore de objetos, onde cada nó é um elemento da página, um atributo ou um texto. 
+
+2. Acesso e Interação:
+O JavaScript tem acesso a essa estrutura em árvore, permitindo que os desenvolvedores selecionem elementos específicos. 
+
+3. Modificação:
+
+Após selecionar os elementos, o JavaScript pode modificar o conteúdo, a estrutura (adicionar/remover elementos), e os estilos (CSS) da página. 
+Principais operações
+Seleção de elementos:
+
+## document.getElementById('ID'): Seleciona um elemento específico usando seu ID.  
+
+## document.querySelector('seletorCSS'): Seleciona o primeiro elemento que corresponde a um seletor CSS. 
+
+## document.querySelectorAll('seletorCSS'): Seleciona todos os elementos que correspondem a um seletor CSS. 
+
+Criação e remoção de elementos:
+document.createElement('tag'): Cria um novo elemento HTML. 
+element.remove(): Remove um elemento do DOM. 
+
+parentNode.removeChild(childNode): Outra forma de remover um elemento filho. 
+
+Modificação de conteúdo e atributos:
+
+element.innerHTML = 'novo conteúdo': Altera o conteúdo HTML de um elemento. 
+
+element.textContent = 'novo texto': Modifica o texto de um elemento. 
+element.style.backgroundColor = 'blue': Altera o estilo CSS de um elemento. 
+
+Adição de elementos:
+parentNode.appendChild(newElement): Adiciona um novo elemento como filho de outro. 
+
+Vantagens
+Páginas interativas: Permite criar websites e aplicações web dinâmicas e interativas. 
+Atualizações em tempo real: O conteúdo da página pode ser atualizado sem a necessidade de recarregar a página inteira. 
+
+Experiência do usuário: Facilita a criação de animações, efeitos visuais e respostas a ações do usuário. 
+
+
 
 
 
