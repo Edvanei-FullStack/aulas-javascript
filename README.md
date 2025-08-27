@@ -99,7 +99,8 @@ Seleção de elementos:
 
 ## document.querySelectorAll('seletorCSS'): Seleciona todos os elementos que correspondem a um seletor CSS. 
 
-Criação e remoção de elementos:
+# Criação e remoção de elementos:
+
 document.createElement('tag'): Cria um novo elemento HTML. 
 element.remove(): Remove um elemento do DOM. 
 
@@ -110,6 +111,7 @@ Modificação de conteúdo e atributos:
 element.innerHTML = 'novo conteúdo': Altera o conteúdo HTML de um elemento. 
 
 element.textContent = 'novo texto': Modifica o texto de um elemento. 
+
 element.style.backgroundColor = 'blue': Altera o estilo CSS de um elemento. 
 
 Adição de elementos:
@@ -120,6 +122,74 @@ Páginas interativas: Permite criar websites e aplicações web dinâmicas e int
 Atualizações em tempo real: O conteúdo da página pode ser atualizado sem a necessidade de recarregar a página inteira. 
 
 Experiência do usuário: Facilita a criação de animações, efeitos visuais e respostas a ações do usuário. 
+
+## EVentos
+
+🚨 Como funcionam os eventos
+👉 Sintaxe básica:
+elemento.addEventListener("tipoEvento", funçãoCallback);
+
+
+tipoEvento: o tipo do evento (ex: "click", "mouseover", "keydown").
+
+funçãoCallback: o que você quer que aconteça quando o evento ocorrer.
+
+🎯 Exemplos práticos
+1. Clique em um botão
+
+HTML:
+
+<button id="meuBotao">Clique aqui</button>
+
+
+JavaScript:
+
+const botao = document.getElementById("meuBotao");
+
+botao.addEventListener("click", () => {
+  alert("Você clicou no botão!");
+});
+
+2. Mudança em um input
+
+HTML:
+
+<input id="nome" type="text" placeholder="Digite seu nome" />
+
+
+JavaScript:
+
+const inputNome = document.getElementById("nome");
+
+inputNome.addEventListener("change", () => {
+  console.log("Nome alterado para:", inputNome.value);
+});
+
+3. Tecla pressionada (keydown)
+document.addEventListener("keydown", (evento) => {
+  console.log("Tecla pressionada:", evento.key);
+});
+
+4. Mouse passando por cima (mouseover / mouseout)
+const caixa = document.getElementById("caixa");
+
+caixa.addEventListener("mouseover", () => {
+  caixa.style.backgroundColor = "yellow";
+});
+
+caixa.addEventListener("mouseout", () => {
+  caixa.style.backgroundColor = "white";
+});
+
+🧠 Dicas para aprender eventos
+
+Comece com o evento "click", que é o mais comum.
+
+Use console.log() dentro do evento pra ver o que está acontecendo.
+
+Pratique com elementos reais (botões, inputs, caixas).
+
+Teste no navegador direto com o console do DevTools (F12).
 
 
 

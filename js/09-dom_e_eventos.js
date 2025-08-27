@@ -13,15 +13,34 @@ const mensagem01 = document.querySelector("#mensagem01"); // querySelector usa a
 const pagina = document.querySelector("body");
 
 
-console.log(exemplo01);
-console.log(mensagem01);
-console.log(pagina);
-
 
 const paragrafo = document.querySelectorAll("p")
-/*querySelector("p") vai selecionar o primeiro paragrafo e o querySelectorAll("p") vai selecionar todos o paragrafos dentro de um Array*/ 
+/*querySelector("p") vai selecionar o primeiro paragrafo e o querySelectorAll("p") vai selecionar todos o paragrafos ou todos os elementos*/ 
 
 console.log(paragrafo);
+
+
+/*Sobre Eventos 
+  Um evento é um acontecimento ou fenomeno que, quando acontece, dispara ações em nosso programa/site/aplicações
+  
+  O JavaScript suporta centenas de tipos de eventos. Exemplo: lcique do mouse, pressionar teclas, tocar na tela, rolagem da página, carregamento da pagina e etc. */
+
+
+
+//Exemplo detectando eventos
+
+//AO clicar 1X adiciona um texto ao paragrafo de msg
+exemplo01.addEventListener("click", function(){
+    mensagem01.textContent = "Opa, evento funcionou!" // progamando Evento com CLick.    
+});
+ // Ao clicar 2x, retira o texto do paragrafo de msg
+  mensagem01.addEventListener("dblclick", function(){
+    mensagem01.textContent = ""; //progamando evento com Duplo CLICK(dbl)
+
+
+    
+  });
+
 
 
 
