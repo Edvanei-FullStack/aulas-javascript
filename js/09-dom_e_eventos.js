@@ -23,7 +23,7 @@ console.log(paragrafo);
 /*Sobre Eventos 
   Um evento é um acontecimento ou fenomeno que, quando acontece, dispara ações em nosso programa/site/aplicações
   
-  O JavaScript suporta centenas de tipos de eventos. Exemplo: lcique do mouse, pressionar teclas, tocar na tela, rolagem da página, carregamento da pagina e etc. */
+  O JavaScript suporta centenas de tipos de eventos. Exemplo: clique do mouse, pressionar teclas, tocar na tela, rolagem da página, carregamento da pagina e etc. */
 
 
 
@@ -81,33 +81,44 @@ const botaoModoNoturno = document.querySelector("#noturno");
 
 botaoModoNoturno.addEventListener("click", function(){
     //Usamos toggle para alternar entre adicionar a classe Ou remover a classe, de acordo com cada clique no botão.
-    pagina.classList.toggle("modo-noturno");
+    pagina.classList.toggle("modo-noturno"); 
 
-   
-    
+    pagina.style.transition = "2s"
+
+      if(pagina.classList.contains("modo-noturno")){
+      botaoModoNoturno.textContent = "Desativar";
+
+    } else{
+      botaoModoNoturno.textContent = "Ativar";
+    }
+
+
+
 
   
     
-
 });
 
 /* DESAFIOS!
-    1) Faça a mudança de cores acontecer gradualmente (use o transition!)*/
+    1) Faça a mudança de cores acontecer gradualmente (use o transition!)
+    
+    pagina.style.transition = "2s"    */
+    
 
     /*2) Se o modo noturno estiver ativado, ou seja, se a classe modo-noturno
     estiver aplicada à página, faça o texto do botão mudar para "Desativar".
-    Caso contrário, faça o texto do botão exibir "Ativar". */
+    Caso contrário, faça o texto do botão exibir "Ativar". 
+    
+     if(pagina.classList.contains("modo-noturno")){
+      botaoModoNoturno.textContent = "Desativar";
 
-    document.getElementById("").addEventListener("click", function () {
-  verificarBotao("noturno");
-});
+    } else{
+      botaoModoNoturno.textContent = "Ativar";
+    }
+      
+*/
 
-document.getElementById("btn2").addEventListener("click", function () {
-  verificarBotao("");
-});
-
-
-}
+  
 
 
 
