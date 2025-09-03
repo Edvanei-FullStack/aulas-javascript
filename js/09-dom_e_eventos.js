@@ -123,8 +123,12 @@ botaoModoNoturno.addEventListener("click", function(){
 
 const janelinha = document.querySelector("#janelinha")
 
+//monitorando o evento de mouseout no documento inteiro
+
 document.addEventListener("mouseout", function(event){
+
   if(event.clientY < 0){ // client Y significa eixo horizontal se fosse cliente X seria eixo vertical
+    
     janelinha.showModal(); //showModal vai abrir a Janelinha
     
 
@@ -132,7 +136,11 @@ document.addEventListener("mouseout", function(event){
     
   });  
   
+  /*Selecionar o botão existente DENTRO da janelaModal (já selecionada anteriormente.)*/
+
   const botaoFechar = janelinha.querySelector("button");
+
+  //Qunado acontecer o acionamento/clique no botão Fechar, fazemos a janelaModal fechar (close) */
   botaoFechar.addEventListener("click", function(){
     janelinha.close();
 
