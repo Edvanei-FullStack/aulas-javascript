@@ -115,11 +115,28 @@ botaoModoNoturno.addEventListener("click", function(){
     } else{
       botaoModoNoturno.textContent = "Ativar";
     }
-      
+
 */
 
-  
 
+/* Evento 02 */
+
+const janelinha = document.querySelector("#janelinha")
+
+document.addEventListener("mouseout", function(event){
+  if(event.clientY < 0){ // client Y significa eixo horizontal se fosse cliente X seria eixo vertical
+    janelinha.showModal(); //showModal vai abrir a Janelinha
+    
+
+  }
+    
+  });  
+  
+  const botaoFechar = janelinha.querySelector("button");
+  botaoFechar.addEventListener("click", function(){
+    janelinha.close();
+
+  });
 
 
 

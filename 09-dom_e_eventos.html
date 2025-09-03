@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript - Eventos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Eventos</title>
 
-<style>
+  <style>
+    /*Folha de estilo interna */
+    .destaque {
+      background-color: rgb(119, 160, 54);
+      color: black;
+      padding: 0.4rem;
+      border-radius: 10px;
 
-  /*Folha de estilo interna */
-  .destaque{
-    background-color: rgb(119, 160, 54);
-    color: black;
-    padding: 0.4rem;
-    border-radius: 10px;
+      display: grid;
+      place-items: center center;
 
-    display: grid;
-    place-items: center center;
-    
-  }
+    }
 
 
-  .centralizar {
-    background-image:url("img/image.png");
-    text-align: center;
-    color: rgb(255, 0, 0);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: all 3.5s;
+    .centralizar {
+      background-image: url("img/image.png");
+      text-align: center;
+      color: rgb(255, 0, 0);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      transition: all 3.5s;
 
-  }
+    }
 
-  /*Classe para modo noturno (Será manipulada via JS)*/
-  .modo-noturno{
-    background-color: black; 
-    color: white;
-    transition: all 3.5s;
-  }
+    /*Classe para modo noturno (Será manipulada via JS)*/
+    .modo-noturno {
+      background-color: black;
+      color: white;
+      transition: all 3.5s;
+    }
 
- 
- 
-</style>
+    #janelinha {
+      border-color: blue;
+      border-width: 10px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+  </style>
 
 
 </head>
-<body >
-    <h1 id="evento">Eventos</h1>
 
-    <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que acontece.</p>
-    <hr>
+<body>
+  <h1 id="evento">Eventos</h1>
 
-    <h2 id="exemplo1">Exemplo 01: Detectando eventos</h2>
-    <p id="mensagem01"></p>
+  <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que
+    acontece.</p>
+  <hr>
 
-    <hr>
+  <h2 id="exemplo1">Exemplo 01: Detectando eventos</h2>
+  <p id="mensagem01"></p>
 
-    <h2>Exemplo 02: Detectando "saída" do site</h2>
-    <p id="mensagem02"></p>
+  <hr>
 
-
-    <hr>
-
-    <h2>Exemplo 03: Modo Noturno</h2>
-
-    <button id="noturno">Ativar</button>  
+  <h2>Exemplo 02: Detectando "saída" do site</h2>
+  <p id="mensagem02"></p>
 
 
+  <hr>
 
-    <hr>
+  <h2>Exemplo 03: Modo Noturno</h2>
+
+  <button id="noturno">Ativar</button>
+
+  <!-- dialog Janela MODAL, usar tag "open" para fazer a janela aparecer-->
+  <dialog id="janelinha">
+
+    <h3>Poxa Já vai embora😎</h3>
+    <P>Tem Certeza?</P>
+    <button>Fechar</button>
+
+  </dialog>
 
 
 
-    <h2 id="evento1">Referências</h2>
+  <hr>
 
-    <ul>
-        <li><b>Eloquent JavaScript:</b> 
-   <a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md" target="_blank">
-   Manipulando Eventos</a>
-  </li>
-        <li><b>MDN:</b> 
-   <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events" target="_blank">
-   Introdução a eventos
-   </a>
-  </li>
-    </ul>
 
-   <script src="js/09-dom_e_eventos.js"></script>
+
+  <h2 id="evento1">Referências</h2>
+
+  <ul>
+    <li><b>Eloquent JavaScript:</b>
+      <a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md"
+        target="_blank">
+        Manipulando Eventos</a>
+    </li>
+    <li><b>MDN:</b>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events"
+        target="_blank">
+        Introdução a eventos
+      </a>
+    </li>
+  </ul>
+
+  <script src="js/09-dom_e_eventos.js"></script>
 
 </body>
+
 </html>
